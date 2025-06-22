@@ -1,62 +1,99 @@
-import  { useState } from "react";
-import {
-  FaBed,
-  FaUtensils,
-  FaCheck,
-  FaTimes,
-} from "react-icons/fa";
+import { useState } from "react";
+import { FaBed, FaUtensils, FaCheck, FaTimes } from "react-icons/fa";
 import { Navbar } from "../components/Navbar";
 import { useGetStatus } from "../hooks/useGetStatus";
-
 
 export const Dashboard = () => {
   const [children] = useState([
     {
       id: 1,
-      name: "Emma Johnson",
+      name: "Jake",
       mood: "happy",
-      isNap: true,
+      isNap: false,
       isEat: true,
     },
     {
       id: 2,
-      name: "Liam Smith",
+      name: "Sarah",
       mood: "neutral",
       isNap: false,
       isEat: true,
     },
     {
       id: 3,
-      name: "Olivia Brown",
+      name: "Lara",
       mood: "sad",
       isNap: true,
       isEat: false,
     },
     {
       id: 4,
-      name: "Noah Davis",
-      mood: "happy",
+      name: "Emily",
+      mood: "nutral",
       isNap: false,
       isEat: true,
     },
     {
       id: 5,
-      name: "Ava Wilson",
-      mood: "neutral",
+      name: "Celeb",
+      mood: "happy",
       isNap: true,
       isEat: true,
     },
     {
       id: 6,
-      name: "Mason Garcia",
+      name: "Ethen ",
+      mood: "nutral",
+      isNap: false,
+      isEat: false,
+    },
+    {
+      id: 7,
+      name: "Hunter",
       mood: "happy",
+      isNap: false,
+      isEat: false,
+    },
+    {
+      id: 8,
+      name: "Logon",
+      mood: "nutral",
+      isNap: false,
+      isEat: false,
+    },
+    {
+      id: 9,
+      name: "Mike",
+      mood: "nutral",
+      isNap: false,
+      isEat: false,
+    },
+    {
+      id: 9,
+      name: "Nooh",
+      mood: "happy",
+      isNap: false,
+      isEat: false,
+    },
+
+    {
+      id: 10,
+      name: "Scarlet",
+      mood: "nutral",
+      isNap: false,
+      isEat: false,
+    },
+
+    {
+      id: 11,
+      name: "Carter",
+      mood: "Sad",
       isNap: false,
       isEat: false,
     },
   ]);
 
-  const {getMoodColor  ,getMoodIcon} = useGetStatus()
-
+  const { getMoodColor, getMoodIcon } = useGetStatus();
 
   return (
     <div className="max-w-6xl mx-auto p-6">
